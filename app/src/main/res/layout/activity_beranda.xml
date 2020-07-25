@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/putih">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="@color/blue">
+        <SearchView
+            android:layout_width="320dp"
+            android:layout_height="44dp"
+            android:background="@color/putih"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/desa1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tujuan"
+                android:layout_width="159dp"
+                android:layout_height="99dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="tempatwisata"
+                android:src="@drawable/lok1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="             Tempat Wisata" />
+            <ImageView
+                android:id="@+id/paket"
+                android:layout_width="125dp"
+                android:layout_height="105dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="homestay"
+                android:src="@drawable/h1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                  Home Stay"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tour"
+                android:layout_width="120dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="paketwisata"
+                android:src="@drawable/ba3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="            Paket Wisata" />
+            <ImageView
+                android:id="@+id/aboutus"
+                android:layout_width="141dp"
+                android:layout_height="129dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:onClick="aboutus"
+                android:src="@drawable/aboutus2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                  About Us"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
